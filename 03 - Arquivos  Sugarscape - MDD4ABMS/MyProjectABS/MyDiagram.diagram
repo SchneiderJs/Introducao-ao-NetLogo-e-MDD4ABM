@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:org.mdd4abms.mm="http://www.mdd4abms.org/mm" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms">
+  <pi:Diagram visible="true" gridUnit="10" diagramTypeId="ABStractme Model" name="MyDiagram.diagram" snapToGrid="true" pictogramLinks="/0/@children.0/@children.0/@link /0/@children.0/@children.4/@link /0/@children.0/@children.9/@link /0/@children.0/@children.10/@link /0/@children.0/@children.11/@link /0/@children.0/@children.12/@link /0/@children.0/@children.22/@link /0/@children.0/@children.23/@link /0/@children.0/@children.24/@link /0/@children.0/@children.25/@link /0/@children.0/@children.26/@link /0/@children.0/@children.27/@link /0/@children.0/@children.28/@link /0/@children.0/@children.29/@link /0/@children.0/@link /0/@link /2/@link /3/@link /0/@children.0/@children.30/@link /0/@children.0/@children.31/@link /0/@children.0/@children.32/@link /0/@children.0/@children.33/@link /0/@children.0/@children.34/@link /0/@children.0/@children.35/@link /0/@children.0/@children.36/@link /0/@children.0/@children.37/@link" version="0.14.0">
+    <graphicsAlgorithm xsi:type="al:Rectangle" background="/0/@colors.1" foreground="/0/@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+    <link businessObjects="/1"/>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="Overview"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="600" height="360" y="10"/>
+      <link businessObjects="/1"/>
+      <children visible="true">
+        <properties key="name" value="Overview.textNameOfModel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="600" height="30" font="/0/@fonts.1" value="Model title">
+          <properties key="name" value="Overview.textNameOfModel"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="2" transparency="0.0" width="600" height="60" y="40" cornerHeight="5" cornerWidth="5"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/0/@colors.1" lineWidth="1" lineVisible="false" transparency="0.0" width="80" height="20" x="3" y="30"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="78" height="20" x="6" y="30" font="/0/@fonts.2" verticalAlignment="ALIGNMENT_TOP" value="Description"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:MultiText" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="590" height="50" x="5" y="45" value="Type a high-level description of the model.">
+          <properties key="name" value="Overview.textDescription"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Overview.RoundedRectangle"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="2" transparency="0.0" width="600" height="250" y="110" cornerHeight="5" cornerWidth="5"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/0/@colors.1" lineWidth="1" lineVisible="false" transparency="0.0" width="70" height="20" x="3" y="100"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="70" height="20" x="6" y="100" font="/0/@fonts.2" verticalAlignment="ALIGNMENT_TOP" value="Concerns"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="125"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/0/@colors.3" foreground="/0/@colors.2" lineWidth="1" filled="true" transparency="0.0" width="160" height="40" x="5" y="265">
+          <points y="40"/>
+          <points x="80"/>
+          <points x="160" y="40"/>
+          <points x="80" y="80"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="170"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="36" height="15" x="5" y="310" font="/0/@fonts.4" value="0">
+          <properties key="name" value="Overview.textMinRowDiamondConcerns"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="200"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="36" height="15" x="40" y="340" font="/0/@fonts.4" horizontalAlignment="ALIGNMENT_RIGHT" value="49">
+          <properties key="name" value="Overview.textMaxRowDiamondConcerns"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="200"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="36" height="15" x="90" y="340" font="/0/@fonts.4" value="0">
+          <properties key="name" value="Overview.textMinColDiamondConcerns"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="170"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="36" height="15" x="130" y="310" font="/0/@fonts.4" horizontalAlignment="ALIGNMENT_RIGHT" value="49">
+          <properties key="name" value="Overview.textMaxColDiamondConcerns"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="155"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="155" height="20" x="5" y="295" font="/0/@fonts.4" horizontalAlignment="ALIGNMENT_CENTER" value="50 x 50">
+          <properties key="name" value="Overview.textDiamondSpatialAbstration"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="130"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" transparency="0.0" width="410" height="80" x="180" y="270" cornerHeight="5" cornerWidth="5"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="120"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/0/@colors.1" lineWidth="1" lineVisible="false" transparency="0.0" width="110" height="20" x="183" y="260"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="120"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="110" height="20" x="183" y="260" font="/0/@fonts.0" verticalAlignment="ALIGNMENT_TOP" value="Spatial Abstraction"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="139"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" transparency="0.0" width="251" height="40" x="325" y="279" cornerHeight="5" cornerWidth="5"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="132"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/0/@colors.1" lineWidth="1" lineVisible="false" transparency="0.0" width="90" height="15" x="330" y="272"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="132"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="90" height="15" x="332" y="272" font="/0/@fonts.5" verticalAlignment="ALIGNMENT_TOP" value="Spatial Unit Entity"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="153"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/0/@colors.1" lineWidth="1" filled="true" transparency="0.0" width="150" height="15" x="336" y="293">
+          <points/>
+          <points y="20"/>
+          <points x="20" y="24" before="20" after="20"/>
+          <points x="70" y="15" before="20" after="20"/>
+          <points x="100" y="20" before="20"/>
+          <points x="100"/>
+        </graphicsAlgorithm>
+      </children>
+      <children>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="153"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/0/@colors.1" lineWidth="1" filled="true" transparency="0.0" width="150" height="15" x="470" y="293">
+          <properties key="name" value="Overview.polygonSpacialUnitEntityB"/>
+          <points/>
+          <points y="20"/>
+          <points x="20" y="24" before="20" after="20"/>
+          <points x="70" y="15" before="20" after="20"/>
+          <points x="100" y="20" before="20"/>
+          <points x="100"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="147"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="30" x="183" y="287" font="/0/@fonts.4" horizontalAlignment="ALIGNMENT_CENTER" value="GRID  of">
+          <properties key="name" value="Overview.textDescriptionSpatialAbstration"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="147"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="30" x="340" y="287" font="/0/@fonts.4" value="Cell: Cell">
+          <properties key="name" value="Overview.textDescriptionSpatialUnit"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="147"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="30" x="472" y="287" font="/0/@fonts.4" value="">
+          <properties key="name" value="Overview.textDescriptionSpatialUnitB"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="190"/>
+        <graphicsAlgorithm xsi:type="al:Ellipse" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" transparency="0.0" width="10" height="10" x="186" y="330">
+          <properties key="name" value="Overview.elipseCreationalCheckSpatialUnit"/>
+          <properties key="type" value="SpatialAbstration"/>
+          <properties key="checked" value="true"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="185"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="20" x="200" y="325" font="/0/@fonts.4" value="Create from ">
+          <properties key="name" value="Overview.textCreationalSpatialUnit"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="185"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="20" x="255" y="325" font="/0/@fonts.4" value="GIS/Shape File">
+          <properties key="name" value="Overview.textCreationalFileSpatialUnit"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="185"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" lineVisible="true" transparency="0.0" width="200" height="20" x="330" y="325" font="/0/@fonts.4" value="file.txt">
+          <properties key="name" value="Overview.textCreationalFileNameSpatialUnit"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="SpatialAbstration"/>
+        <properties key="default-height" value="185"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.4" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="535" y="325" font="/0/@fonts.4" value="Choose File">
+          <properties key="name" value="Overview.textCreationalFileChoose"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Overview.shapeDiamondVariable"/>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" filled="true" transparency="0.0" width="160" height="80" x="5" y="200">
+          <properties key="ToolTip" value="Select the rectangle to edit the concern"/>
+          <points y="40"/>
+          <points x="80"/>
+          <points x="160" y="40"/>
+          <points x="80" y="80"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1 /1/@concerns.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Overview.textDiamondConcerns"/>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="155" height="30" x="5" y="225" horizontalAlignment="ALIGNMENT_CENTER" value="Agentes">
+          <properties key="name" value="Overview.textDiamondConcerns"/>
+          <properties key="ToolTip" value="Select the rectangle to edit the concern"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1 /1/@concerns.0"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" transparency="0.0" width="410" height="60" x="180" y="200" cornerHeight="5" cornerWidth="5"/>
+        <link businessObjects="/1 /1/@concerns.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Overview.textDescriptionConcern"/>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="405" height="50" x="183" y="200" font="/0/@fonts.6" value="Agentes que procuram acucar">
+          <properties key="name" value="Overview.textDescriptionConcern"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1 /1/@concerns.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Overview.shapeDiamondVariable"/>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" filled="true" transparency="0.0" width="160" height="80" x="5" y="130">
+          <properties key="ToolTip" value="Select the rectangle to edit the concern"/>
+          <points y="40"/>
+          <points x="80"/>
+          <points x="160" y="40"/>
+          <points x="80" y="80"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1 /1/@concerns.1"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Overview.textDiamondConcerns"/>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="155" height="30" x="5" y="155" horizontalAlignment="ALIGNMENT_CENTER" value="Acucar">
+          <properties key="name" value="Overview.textDiamondConcerns"/>
+          <properties key="ToolTip" value="Select the rectangle to edit the concern"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1 /1/@concerns.1"/>
+      </children>
+      <children visible="true">
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/0/@colors.1" foreground="/0/@colors.2" lineWidth="1" transparency="0.0" width="410" height="60" x="180" y="130" cornerHeight="5" cornerWidth="5"/>
+        <link businessObjects="/1 /1/@concerns.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Overview.textDescriptionConcern"/>
+        <properties key="class" value="Overview.Concern"/>
+        <properties key="type" value="Concern"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="405" height="50" x="183" y="130" font="/0/@fonts.6" value="Acucar para comer">
+          <properties key="name" value="Overview.textDescriptionConcern"/>
+          <properties key="type" value="SpatialAbstration"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1 /1/@concerns.1"/>
+      </children>
+    </children>
+    <colors red="227" green="238" blue="249"/>
+    <colors red="255" green="255" blue="255"/>
+    <colors/>
+    <colors red="245" green="245" blue="245"/>
+    <colors blue="255"/>
+    <fonts name="Arial" size="8" bold="true"/>
+    <fonts name="Arial" size="11" bold="true"/>
+    <fonts name="Arial" size="10" bold="true"/>
+    <fonts name="Arial" size="8"/>
+    <fonts name="Arial" size="7"/>
+    <fonts name="Arial" size="7" bold="true"/>
+    <fonts name="Arial" size="11"/>
+  </pi:Diagram>
+  <org.mdd4abms.mm:AgentBasedSimulation title="Model title" groundUnits="/1/@groundAbstraction/@cells.0" description="Type a high-level description of the model.">
+    <groundAbstraction xsi:type="org.mdd4abms.mm:Grid" title="Grid" maxCol="49" maxRow="49">
+      <cells name="Cell" pluralName="Cells" scale="m^2" supplementaryStructures="/1/@concerns.1/@supplementaryStructures.0">
+        <relationships cardinality="-1" type="CONTAINER" source="/1/@groundAbstraction/@cells.0" target="/1/@concerns.0/@entities.0" direction="BIDIRECTIONAL"/>
+      </cells>
+    </groundAbstraction>
+    <concerns title="Agentes" description="Agentes que procuram acucar">
+      <entities xsi:type="org.mdd4abms.mm:Agent" name="Individuo" description="A brief description of the agent1" pluralName="Individuos">
+        <attributes name="raioVisao" primitiveType="INTEGER" cardinality="1">
+          <initSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="" attribute="/1/@concerns.0/@entities.0/@attributes.0">
+            <expression value="1 + random(6)"/>
+          </initSource>
+        </attributes>
+        <attributes name="metabolismo" primitiveType="DECIMAL" cardinality="1">
+          <initSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="" attribute="/1/@concerns.0/@entities.0/@attributes.1">
+            <expression value="1 + random(4)"/>
+          </initSource>
+        </attributes>
+        <attributes name="energy" primitiveType="DECIMAL" cardinality="1">
+          <initSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+            <expression value="1 + random(5)"/>
+          </initSource>
+          <updateSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+            <expression value="-metabolismo"/>
+          </updateSource>
+        </attributes>
+        <strategy xsi:type="org.mdd4abms.mm:DesignerDefStrategy" identifier="">
+          <location xsi:type="org.mdd4abms.mm:ExpressionSource">
+            <expression value="random(Cell)"/>
+          </location>
+          <quantity xsi:type="org.mdd4abms.mm:StaticValueSource" value="100"/>
+        </strategy>
+        <capabilities xsi:type="org.mdd4abms.mm:ClosestBestSpatialUnit" agent="/1/@concerns.0/@entities.0" id="mobility1" objectiveAttribute="/1/@concerns.1/@supplementaryStructures.0/@attributes.0" objective="MAXIMIZE">
+          <rangeLowerLimit xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+            <expression value="raioVisao"/>
+          </rangeLowerLimit>
+          <rangeUpperLimit xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+            <expression value="raioVisao"/>
+          </rangeUpperLimit>
+        </capabilities>
+        <capabilities xsi:type="org.mdd4abms.mm:Living" id="Sobrevivencia" agent="/1/@concerns.0/@entities.0">
+          <resources resourceAttribute="/1/@concerns.0/@entities.0/@attributes.2" type="ENERGY">
+            <lifeCondition xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+              <expression value="energy> 0"/>
+            </lifeCondition>
+          </resources>
+        </capabilities>
+        <capabilities xsi:type="org.mdd4abms.mm:NetLogoAgentCapability" libFile="C:\\Users\\gsjesus\\MyProjectABS\\harvestSugar.nls" name="harvestSugar" agent="/1/@concerns.0/@entities.0"/>
+      </entities>
+      <outputDatasets name="Quantidades">
+        <outputData xsi:type="org.mdd4abms.mm:Aggregation" entity="/1/@concerns.0/@entities.0" name="Individuos">
+          <periodicityValue xsi:type="org.mdd4abms.mm:StaticValueSource" identifier="" value="1"/>
+        </outputData>
+      </outputDatasets>
+    </concerns>
+    <concerns title="Acucar" description="Acucar para comer">
+      <supplementaryStructures entity="/1/@groundAbstraction/@cells.0">
+        <attributes name="acucar" primitiveType="DECIMAL" cardinality="1">
+          <initSource xsi:type="org.mdd4abms.mm:FileSource" identifier="" attribute="/1/@concerns.1/@supplementaryStructures.0/@attributes.0">
+            <file name="C:\Users\gsjesus\MyProjectABS\sugar-map.asc"/>
+          </initSource>
+          <updateSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="" attribute="/1/@concerns.1/@supplementaryStructures.0/@attributes.0">
+            <expression value="min( max_acucar, (acucar + 0.1) )"/>
+          </updateSource>
+        </attributes>
+        <attributes name="max_acucar" primitiveType="DECIMAL" cardinality="1">
+          <initSource xsi:type="org.mdd4abms.mm:FileSource" identifier="" attribute="/1/@concerns.1/@supplementaryStructures.0/@attributes.1">
+            <file name="C:\Users\gsjesus\MyProjectABS\sugar-map.asc"/>
+          </initSource>
+        </attributes>
+        <externalNetLogoCapabilities libFile="C:\\Users\\gsjesus\\MyProjectABS\\color-cells-by-sugar-mdd4abms.nls" name="colorCellsBySugar" hasInitProcedure="true"/>
+      </supplementaryStructures>
+    </concerns>
+  </org.mdd4abms.mm:AgentBasedSimulation>
+  <pi:Diagram visible="true" gridUnit="10" diagramTypeId="ABStractme Model" name="Agentes" snapToGrid="true" pictogramLinks="/2/@children.1/@children.1/@link /2/@children.1/@link /2/@children.1/@children.13/@link /2/@children.1/@children.14/@link /2/@children.1/@children.15/@link /2/@children.1/@children.16/@link /2/@children.1/@children.17/@link /2/@children.1/@children.18/@link /2/@children.1/@children.19/@link /2/@children.1/@children.20/@link /2/@children.2/@link /2/@children.1/@children.21/@link /2/@children.1/@children.22/@link /2/@children.1/@children.23/@link /2/@children.3/@link /2/@children.1/@children.24/@link /2/@children.1/@children.25/@link /2/@children.1/@children.26/@link /2/@children.1/@children.27/@link /2/@children.1/@children.28/@link /2/@children.1/@children.29/@link /2/@children.1/@children.30/@link /2/@children.3/@children.4/@link /2/@children.3/@children.5/@link /2/@children.4/@link /2/@children.1/@children.31/@link /2/@children.1/@children.32/@link /2/@children.1/@children.33/@link /2/@children.5/@link /2/@connections.3/@link /2/@children.1/@children.35/@link /2/@children.1/@children.36/@link /2/@children.1/@children.38/@link /2/@children.1/@children.39/@link /2/@children.1/@children.41/@link" version="0.14.0">
+    <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+    <link businessObjects="/1/@concerns.0 /1"/>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="LabelOfConcern"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="450" height="30" x="5" y="5"/>
+      <children visible="true">
+        <properties key="name" value="Concern.textLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="450" height="30" x="5" y="5" font="/2/@fonts.0" value="Agentes"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Polyline" foreground="/0/@colors.2" lineWidth="2" filled="false" transparency="0.0">
+          <points y="28"/>
+          <points x="450" y="28"/>
+        </graphicsAlgorithm>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="Agent"/>
+      <properties key="Agent.strategy" value="Designer defined"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="300" height="254" x="30" y="80"/>
+      <link businessObjects="/1/@concerns.0/@entities.0"/>
+      <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="/2/@connections.0 /2/@connections.1 /2/@connections.2 /2/@connections.3"/>
+      <children visible="true">
+        <properties key="name" value="Agent.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="300" height="254"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextNameAgent"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="300" height="30" font="/2/@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="Individuo"/>
+        <link businessObjects="/1/@concerns.0/@entities.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeRectangleCapabilities"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="282" height="72" x="18" y="30"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeRectangleCapabilitiesVerticalLabel"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="20" height="72" y="30"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextCapabilitiesVerticalLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="20" height="72" y="30" font="/2/@fonts.3" horizontalAlignment="ALIGNMENT_CENTER" angle="270" value="CAPABILITIES" rotation="270.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.rectangleCreation"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="20" height="76" y="100"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextCreation"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="20" height="76" y="100" font="/2/@fonts.3" horizontalAlignment="ALIGNMENT_CENTER" angle="270" value="CREATION" rotation="270.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeRectangleAttributes"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="20" height="80" y="174"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextAttributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="20" height="80" y="174" font="/2/@fonts.3" horizontalAlignment="ALIGNMENT_CENTER" angle="270" value="ATTRIBUTES" rotation="270.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeRectangleAttributesHeader"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="282" height="20" x="18" y="174"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextAttributesHeader_name"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="20" x="23" y="174" font="/2/@fonts.4" value="Name"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextAttributesHeader_init"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="185" y="174" font="/2/@fonts.4" value="Init."/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextAttributesHeader_update"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="145" height="20" x="240" y="174" font="/2/@fonts.4" value="Update"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeRectangleVariable"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="0.8" width="282" height="18" x="20" y="195" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="Select the row to edit the attribute"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0 /1/@concerns.0/@entities.0/@attributes.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextNameVariable"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="160" height="20" x="23" y="195" font="/2/@fonts.1" value="raioVisao"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextInitSource"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="185" y="195" font="/2/@fonts.1" value="E"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextUpdateSource"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="240" y="195" font="/2/@fonts.1"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeRectangleVariable"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="0.8" width="282" height="18" x="20" y="215" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="Select the row to edit the attribute"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0 /1/@concerns.0/@entities.0/@attributes.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextNameVariable"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="160" height="20" x="23" y="215" font="/2/@fonts.1" value="metabolismo"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextInitSource"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="185" y="215" font="/2/@fonts.1" value="E"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextUpdateSource"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="240" y="215" font="/2/@fonts.1"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.1"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeRectangleMobility"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="1.0" width="277" height="22" x="20" y="32" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="The Mobility Capability"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextMobilityCapabilityType"/>
+        <graphicsAlgorithm xsi:type="al:Text" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" filled="true" transparency="0.0" width="100" height="22" x="21" y="32" font="/2/@fonts.1" value="Mobility"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextMobility"/>
+        <graphicsAlgorithm xsi:type="al:Text" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" filled="true" transparency="0.0" width="177" height="22" x="121" y="32" font="/2/@fonts.1" value="mobility1">
+          <properties key="ToolTip" value="The Mobility Cpability."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeRectangleVariable"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="0.8" width="282" height="18" x="20" y="235" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="Select the row to edit the attribute"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0 /1/@concerns.0/@entities.0/@attributes.2"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextNameVariable"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="160" height="20" x="23" y="235" font="/2/@fonts.1" value="energy"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.2"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextInitSource"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="185" y="235" font="/2/@fonts.1" value="E"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.2"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextUpdateSource"/>
+        <properties key="class" value="Agent.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="240" y="235" font="/2/@fonts.1" value="E"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@attributes.2"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeRectangleLiving"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="1.0" width="277" height="22" x="20" y="54" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="The Living Capability"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextLivingCapabilityTypeName"/>
+        <graphicsAlgorithm xsi:type="al:Text" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" filled="true" transparency="0.0" width="100" height="22" x="21" y="54" font="/2/@fonts.1" value="Living"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextLiving"/>
+        <graphicsAlgorithm xsi:type="al:Text" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" filled="true" transparency="0.0" width="177" height="22" x="121" y="54" font="/2/@fonts.1" value="Sobrevivencia">
+          <properties key="ToolTip" value="The Living Capability."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.1"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeRectangleNetlogoAgentCapability"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="1.0" width="280" height="22" x="20" y="76" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="The Existing NetLogo Agent Capability"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.2"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextNetlogoAgentCapabilityTypeName"/>
+        <graphicsAlgorithm xsi:type="al:Text" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" filled="true" transparency="0.0" width="100" height="22" x="21" y="76" font="/2/@fonts.1" value="NetLogoCapability"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.2"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextNetlogoAgentCapability"/>
+        <graphicsAlgorithm xsi:type="al:Text" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" filled="true" transparency="0.0" width="177" height="22" x="121" y="76" font="/2/@fonts.1" value="harvestSugar">
+          <properties key="ToolTip" value="The Existing NetLogo Agent Capability"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.2"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextCreationTypeLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="15" x="23" y="107" font="/2/@fonts.4" value="Strategy"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeTextCreationType"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="172" height="15" x="123" y="107" font="/2/@fonts.1" value="Designer defined">
+          <properties key="ToolTip" value="Click to modify creation strategy."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeTextCreationQuantityType"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="20" height="15" x="88" y="127" font="/2/@fonts.4" horizontalAlignment="ALIGNMENT_CENTER" value="V">
+          <properties key="ToolTip" value="Select the quantity data type."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextCreationQuantityLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="15" x="23" y="127" font="/2/@fonts.4" value="Quantity"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeTextCreationQuantityValue"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="172" height="15" x="123" y="127" font="/2/@fonts.1" value="100">
+          <properties key="ToolTip" value="Click to select a parameter for the quantity."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeTextCreationLocationType"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="20" height="15" x="88" y="147" font="/2/@fonts.4" horizontalAlignment="ALIGNMENT_CENTER" value="E">
+          <properties key="ToolTip" value="Select the location data type."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Agent.shapeTextCreationLocationLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="15" x="23" y="147" font="/2/@fonts.4" value="Location"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Agent.shapeTextCreationLocationValue"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="172" height="15" x="123" y="147" font="/2/@fonts.1" value="random(Cell)">
+          <properties key="ToolTip" value="Click to select a parameter for the location."/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0"/>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="Mobility"/>
+      <properties key="class" value="Mobility"/>
+      <properties key="isCollapsed" value="false"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="50" x="530" y="170"/>
+      <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.0"/>
+      <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="/2/@connections.0"/>
+      <children visible="true">
+        <properties key="name" value="Mobility.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="150" height="50"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Mobility.titleText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="30" font="/2/@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="mobility1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Mobility.shapeTextMobilityNameLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="20" x="5" y="25" font="/2/@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="&#xab;Closest Best Spatial Unit&#xbb;"/>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="Living"/>
+      <properties key="class" value="Living"/>
+      <properties key="isCollapsed" value="false"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="70" x="440" y="60"/>
+      <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.1"/>
+      <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="/2/@connections.1"/>
+      <anchors xsi:type="pi:ChopboxAnchor"/>
+      <children visible="true">
+        <properties key="name" value="Living.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="150" height="70"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Living.titleText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="30" font="/2/@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="Sobrevivencia"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Living.shapeTextLivingNameLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="20" y="25" font="/2/@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="&#xab;Energy&#xbb;"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Living.lifeResourceHeaderSeparatorLine"/>
+        <graphicsAlgorithm xsi:type="al:Polyline" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" filled="false" transparency="0.0">
+          <points y="50"/>
+          <points x="150" y="50"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="Living.lifeResourceNameRectangle"/>
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="0" lineVisible="false" transparency="0.8" width="146" height="18" x="4" y="50" cornerHeight="5" cornerWidth="5">
+          <properties key="ToolTip" value="Select the row to edit the life resource"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.1/@resources.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="Living.lifeResourceNameText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="146" height="20" x="4" y="50" font="/2/@fonts.1" value="energy"/>
+        <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.1/@resources.0"/>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="NetLogoCapability"/>
+      <properties key="class" value="NetLogoCapability"/>
+      <properties key="isCollapsed" value="false"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="50" x="530" y="240"/>
+      <link businessObjects="/1/@concerns.0/@entities.0/@capabilities.2"/>
+      <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="/2/@connections.2"/>
+      <children visible="true">
+        <properties key="name" value="NetLogoCapability.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" transparency="0.0" width="150" height="50"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="NetLogoCapability.titleText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="30" font="/2/@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="harvestSugar"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="NetLogoCapability.shapeTextNetlogoAgentCapabilityNameLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="20" x="5" y="25" font="/2/@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="&#xab;Existing NetLogo Capability&#xbb;"/>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="OutputDataset"/>
+      <properties key="class" value="OutputDataset"/>
+      <properties key="isCollapsed" value="false"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="170" height="50" x="440" y="350"/>
+      <link businessObjects="/1/@concerns.0/@outputDatasets.0"/>
+      <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="/2/@connections.3"/>
+      <children visible="true">
+        <properties key="name" value="OutputDataset.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/2/@colors.1" foreground="/2/@colors.2" lineWidth="2" filled="true" transparency="0.0" width="150" height="50">
+          <points x="10"/>
+          <points y="50"/>
+          <points x="160" y="50"/>
+          <points x="170"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="name" value="OutputDataset.titleText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="170" height="30" font="/2/@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="Quantidades"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="OutputDataset.shapeTextStereotypeLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/2/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="170" height="20" x="5" y="25" font="/2/@fonts.1" horizontalAlignment="ALIGNMENT_CENTER" value="&#xab;Output Dataset&#xbb;"/>
+      </children>
+    </children>
+    <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="/2/@children.1/@anchors.0" end="/2/@children.2/@anchors.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="/2/@colors.2" lineWidth="2" lineStyle="DASH" filled="false" transparency="0.0"/>
+    </connections>
+    <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="/2/@children.1/@anchors.0" end="/2/@children.3/@anchors.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="/2/@colors.2" lineWidth="2" lineStyle="DASH" filled="false" transparency="0.0"/>
+    </connections>
+    <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="/2/@children.1/@anchors.0" end="/2/@children.4/@anchors.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="/2/@colors.2" lineWidth="2" lineStyle="DASH" filled="false" transparency="0.0"/>
+    </connections>
+    <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="/2/@children.1/@anchors.0" end="/2/@children.5/@anchors.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="/2/@colors.2" lineWidth="2" lineStyle="DASH" filled="false" transparency="0.0"/>
+      <link businessObjects="/1/@concerns.0/@outputDatasets.0/@outputData.0"/>
+    </connections>
+    <colors red="227" green="238" blue="249"/>
+    <colors red="255" green="255" blue="255"/>
+    <colors/>
+    <fonts name="Arial" size="13" bold="true"/>
+    <fonts name="Arial" size="8"/>
+    <fonts name="Arial" size="10" bold="true"/>
+    <fonts name="Arial" size="6" bold="true"/>
+    <fonts name="Arial" size="8" bold="true"/>
+  </pi:Diagram>
+  <pi:Diagram visible="true" gridUnit="10" diagramTypeId="ABStractme Model" name="Acucar" snapToGrid="true" pictogramLinks="/3/@children.1/@children.4/@link /3/@children.1/@link /3/@children.1/@children.12/@link /3/@children.1/@children.13/@link /3/@children.1/@children.14/@link /3/@children.1/@children.15/@link /3/@children.2/@link /3/@children.1/@children.16/@link /3/@children.1/@children.17/@link /3/@children.1/@children.18/@link /3/@children.1/@children.19/@link" version="0.14.0">
+    <graphicsAlgorithm xsi:type="al:Rectangle" background="/3/@colors.1" foreground="/3/@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+    <link businessObjects="/1/@concerns.1 /1"/>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="LabelOfConcern"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="450" height="30" x="5" y="5"/>
+      <children visible="true">
+        <properties key="name" value="Concern.textLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/0/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="450" height="30" x="5" y="5" font="/3/@fonts.0" value="Acucar"/>
+      </children>
+      <children visible="true">
+        <graphicsAlgorithm xsi:type="al:Polyline" foreground="/0/@colors.2" lineWidth="2" filled="false" transparency="0.0">
+          <points y="28"/>
+          <points x="450" y="28"/>
+        </graphicsAlgorithm>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="SupplementaryStructure"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="300" height="190" x="10" y="50"/>
+      <link businessObjects="/1/@concerns.1/@supplementaryStructures.0"/>
+      <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="/3/@connections.0"/>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/3/@colors.1" foreground="/3/@colors.2" lineWidth="2" transparency="0.0" width="300" height="140"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.mainRectangleTop"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/3/@colors.2" foreground="/3/@colors.2" lineWidth="2" filled="true" lineVisible="true" transparency="0.0" width="300" height="50">
+          <points/>
+          <points y="40"/>
+          <points x="60" y="60" before="50" after="50"/>
+          <points x="200" y="30" before="50" after="50"/>
+          <points x="300" y="50" before="50"/>
+          <points x="300"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.mainRectangleBotton"/>
+        <graphicsAlgorithm xsi:type="al:Polygon" background="/3/@colors.1" foreground="/3/@colors.2" lineWidth="2" filled="true" lineVisible="true" transparency="0.0" width="300" height="50" y="140">
+          <points/>
+          <points y="10"/>
+          <points x="30" y="30" before="50" after="50"/>
+          <points x="200" before="50" after="50"/>
+          <points x="300" y="20" before="50"/>
+          <points x="300"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.mainRectangleMiddle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/3/@colors.1" lineWidth="0" lineVisible="false" transparency="0.0" width="296" height="4" x="2" y="138"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.nameUnitText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.1" lineWidth="1" filled="false" transparency="0.0" width="225" height="20" x="10" font="/3/@fonts.2" value="Cell"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.labelNameUnitText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.1" lineWidth="1" filled="false" transparency="0.0" width="225" height="20" x="10" y="20" font="/3/@fonts.3" value="Supplementary Structure"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.atributesTextShape"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="20" height="94" x="1" y="70" font="/3/@fonts.4" horizontalAlignment="ALIGNMENT_CENTER" angle="270" value="ATTRIBUTES" rotation="270.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="SupplementaryStructure.lineDivider"/>
+        <graphicsAlgorithm xsi:type="al:Polyline" foreground="/3/@colors.2" lineWidth="2" filled="false" transparency="0.0" x="20" y="70">
+          <points/>
+          <points y="85"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextAttributesHeader_name"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="100" height="20" x="27" y="50" font="/3/@fonts.1" value="Name"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextAttributesHeader_init"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="50" height="20" x="185" y="50" font="/3/@fonts.1" value="Init."/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextAttributesHeader_update"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="145" height="20" x="240" y="50" font="/3/@fonts.1" value="Update"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="SupplementaryStructure.lineDividerAtributesHeader"/>
+        <graphicsAlgorithm xsi:type="al:Polyline" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0">
+          <points x="27" y="65"/>
+          <points x="290" y="65"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="SupplementaryStructure.shapeRectangleVariable"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/3/@colors.1" foreground="/3/@colors.2" lineWidth="0" lineVisible="false" transparency="0.8" width="275" height="18" x="24" y="66">
+          <properties key="ToolTip" value="Select the row to edit the attribute"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0 /1/@concerns.1/@supplementaryStructures.0/@attributes.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.textNameVariable"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="160" height="20" x="27" y="66" font="/3/@fonts.3" value="acucar"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@attributes.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextInitSource"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="70" height="20" x="160" y="66" font="/3/@fonts.3" horizontalAlignment="ALIGNMENT_CENTER" value="FGIS"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@attributes.0"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextUpdateSource"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="35" height="20" x="240" y="66" font="/3/@fonts.3" value="E"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@attributes.0"/>
+      </children>
+      <children visible="true" active="true">
+        <properties key="name" value="SupplementaryStructure.shapeRectangleVariable"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/3/@colors.1" foreground="/3/@colors.2" lineWidth="0" lineVisible="false" transparency="0.8" width="275" height="18" x="24" y="86">
+          <properties key="ToolTip" value="Select the row to edit the attribute"/>
+        </graphicsAlgorithm>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0 /1/@concerns.1/@supplementaryStructures.0/@attributes.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.textNameVariable"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="160" height="20" x="27" y="86" font="/3/@fonts.3" value="max_acucar"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@attributes.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextInitSource"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="70" height="20" x="160" y="86" font="/3/@fonts.3" horizontalAlignment="ALIGNMENT_CENTER" value="FGIS"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@attributes.1"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="SupplementaryStructure.shapeTextUpdateSource"/>
+        <properties key="class" value="SupplementaryStructure.Atributes"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="35" height="20" x="240" y="86" font="/3/@fonts.3"/>
+        <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@attributes.1"/>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="name" value="NetLogoCapability"/>
+      <properties key="class" value="NetLogoCapability"/>
+      <properties key="isCollapsed" value="false"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="50" x="350" y="120"/>
+      <link businessObjects="/1/@concerns.1/@supplementaryStructures.0/@externalNetLogoCapabilities.0"/>
+      <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="/3/@connections.0"/>
+      <children visible="true">
+        <properties key="name" value="NetLogoCapability.mainRectangle"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" background="/3/@colors.1" foreground="/3/@colors.2" lineWidth="2" transparency="0.0" width="150" height="50"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="NetLogoCapability.titleText"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="30" font="/3/@fonts.2" horizontalAlignment="ALIGNMENT_CENTER" value="colorCellsBySugar"/>
+      </children>
+      <children visible="true">
+        <properties key="name" value="NetLogoCapability.shapeTextNetlogoAgentCapabilityNameLabel"/>
+        <graphicsAlgorithm xsi:type="al:Text" foreground="/3/@colors.2" lineWidth="1" filled="false" transparency="0.0" width="150" height="20" x="5" y="25" font="/3/@fonts.3" horizontalAlignment="ALIGNMENT_CENTER" value="&#xab;Existing NetLogo Capability&#xbb;"/>
+      </children>
+    </children>
+    <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="/3/@children.1/@anchors.0" end="/3/@children.2/@anchors.0">
+      <graphicsAlgorithm xsi:type="al:Polyline" foreground="/3/@colors.2" lineWidth="2" lineStyle="DASH" filled="false" transparency="0.0"/>
+    </connections>
+    <colors red="227" green="238" blue="249"/>
+    <colors red="255" green="255" blue="255"/>
+    <colors/>
+    <fonts name="Arial" size="13" bold="true"/>
+    <fonts name="Arial" size="8" bold="true"/>
+    <fonts name="Arial" size="10" bold="true"/>
+    <fonts name="Arial" size="8"/>
+    <fonts name="Arial" size="6" bold="true"/>
+  </pi:Diagram>
+</xmi:XMI>

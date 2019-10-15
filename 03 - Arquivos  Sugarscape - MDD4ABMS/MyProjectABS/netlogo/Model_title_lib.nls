@@ -1,0 +1,26 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Library of utilitary reporters and procedures
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Finds and report an agent_set of elements in-radius using 
+; a breadth-like strategy.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+to-report in-radius-incremental[agt_set radius radius_step]
+   let elements no-turtles
+   let r radius_step
+   while [ r <= radius and count elements = 0] [
+      set elements agt_set in-radius r
+      set r r + radius_step
+   ] 
+   report elements;
+end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Reports a random number between low\high values
+; Check the documentation of the random NetLogo reporter
+; to see which distribution is used.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+to-report random-in-range [low high]
+  report low + random (high - low + 1)
+end
+

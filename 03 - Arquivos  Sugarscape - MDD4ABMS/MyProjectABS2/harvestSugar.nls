@@ -1,0 +1,23 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Behavior to harvest (collect) all the sugar of a patch and transform it into energy
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Harvest all the sugar and transform it into energy
+; -------------------------------------------
+; ---- WARNING ---- WARNING ---- WARNING ----
+; This procedure requires the following attributes:
+; Agent: 
+;   - energy: the agent energy
+; Patch (or supplementary structure):
+;   - acucar: the amount of sugar available
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+to harvestSugar
+  ; increases the energy level of the agent
+  set energy energy + [ acucar ] of patch-here
+ 
+  	; harvest all the sugar of the patch
+  ask patch-here [
+    set acucar 0
+  ]
+end

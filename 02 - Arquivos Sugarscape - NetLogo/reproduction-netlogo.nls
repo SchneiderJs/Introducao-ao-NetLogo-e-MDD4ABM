@@ -1,0 +1,46 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Simple reproduction agent capability.
+; At every timestep, the agent generates a child if the following criteria are met:
+; - The agent has 2 or more units of energy
+; - There is a empty patch in the immediate neighborhood (radius 1.5)
+; The child agent inherits:
+; - The vision and metabolism of the parent; 
+; - Half of the parent's energy
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+globals [ 
+  agent_breed    ; the agent breed, to use in the reproduction procedure
+]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Reproduction procedure
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;  
+to reproduceAgent
+  ; Checks whether the agent has 2 or more units of energy
+  if energia >= 2 [
+    ; Checks whether there is an empty patch in the immediate neighborhood
+    let childPatch one-of patches in-radius 1.5 with [ not any? other turtles-here with [ breed = agent_breed ] ]
+    if childPatch != nobody [
+      ; Generating a child agent
+      hatch 1 [ 
+        move-to childPatch
+        set breed agent_breed
+        set raioVisao [raioVisao] of myself
+        set metabolismo [ metabolismo ] of myself
+        set energia ( [ energia ] of myself / 2 )
+        
+        ; Decreases parent's energy
+        ask myself [ 
+          set energia ( energia / 2 )
+        ]
+      ]
+    ]
+  ]
+end
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Initialization procedure
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;  
+to reproduceAgentInit [ _agent_breed ]
+  set agent_breed _agent_breed
+end

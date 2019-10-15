@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.mdd4abms.mm:AgentBasedSimulation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.mdd4abms.mm="http://www.mdd4abms.org/mm" title="Model title" groundUnits="//@groundAbstraction/@cells.0" description="Type a high-level description of the model.">
+  <groundAbstraction xsi:type="org.mdd4abms.mm:Grid" title="Grid" maxCol="49" maxRow="49">
+    <cells name="Cell" pluralName="Cells" scale="m^2" supplementaryStructures="//@concerns.1/@supplementaryStructures.0">
+      <relationships cardinality="-1" type="CONTAINER" source="//@groundAbstraction/@cells.0" target="//@concerns.0/@entities.0" direction="BIDIRECTIONAL"/>
+    </cells>
+  </groundAbstraction>
+  <concerns title="Agentes" description="Agentes que procuram acucar">
+    <entities xsi:type="org.mdd4abms.mm:Agent" name="Individuo" description="A brief description of the agent1" pluralName="Individuos">
+      <attributes name="raioVisao" primitiveType="INTEGER" cardinality="1">
+        <initSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="" attribute="//@concerns.0/@entities.0/@attributes.0">
+          <expression value="1 + random(6)"/>
+        </initSource>
+      </attributes>
+      <attributes name="metabolismo" primitiveType="DECIMAL" cardinality="1">
+        <initSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="" attribute="//@concerns.0/@entities.0/@attributes.1">
+          <expression value="1 + random(4)"/>
+        </initSource>
+      </attributes>
+      <attributes name="energy" primitiveType="DECIMAL" cardinality="1">
+        <initSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+          <expression value="1 + random(5)"/>
+        </initSource>
+        <updateSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+          <expression value="-metabolismo"/>
+        </updateSource>
+      </attributes>
+      <strategy xsi:type="org.mdd4abms.mm:DesignerDefStrategy" identifier="">
+        <location xsi:type="org.mdd4abms.mm:ExpressionSource">
+          <expression value="random(Cell)"/>
+        </location>
+        <quantity xsi:type="org.mdd4abms.mm:StaticValueSource" value="100"/>
+      </strategy>
+      <capabilities xsi:type="org.mdd4abms.mm:ClosestBestSpatialUnit" agent="//@concerns.0/@entities.0" id="mobility1" objectiveAttribute="//@concerns.1/@supplementaryStructures.0/@attributes.0" objective="MAXIMIZE">
+        <rangeLowerLimit xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+          <expression value="raioVisao"/>
+        </rangeLowerLimit>
+        <rangeUpperLimit xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+          <expression value="raioVisao"/>
+        </rangeUpperLimit>
+      </capabilities>
+      <capabilities xsi:type="org.mdd4abms.mm:Living" id="Sobrevivencia" agent="//@concerns.0/@entities.0">
+        <resources resourceAttribute="//@concerns.0/@entities.0/@attributes.2" type="ENERGY">
+          <lifeCondition xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="">
+            <expression value="energy> 0"/>
+          </lifeCondition>
+        </resources>
+      </capabilities>
+      <capabilities xsi:type="org.mdd4abms.mm:NetLogoAgentCapability" libFile="C:\\Users\\gsjesus\\MyProjectABS\\harvestSugar.nls" name="harvestSugar" agent="//@concerns.0/@entities.0"/>
+    </entities>
+    <outputDatasets name="Quantidades">
+      <outputData xsi:type="org.mdd4abms.mm:Aggregation" entity="//@concerns.0/@entities.0" name="Individuos">
+        <periodicityValue xsi:type="org.mdd4abms.mm:StaticValueSource" identifier="" value="1"/>
+      </outputData>
+    </outputDatasets>
+  </concerns>
+  <concerns title="Acucar" description="Acucar para comer">
+    <supplementaryStructures entity="//@groundAbstraction/@cells.0">
+      <attributes name="acucar" primitiveType="DECIMAL" cardinality="1">
+        <initSource xsi:type="org.mdd4abms.mm:FileSource" identifier="" attribute="//@concerns.1/@supplementaryStructures.0/@attributes.0">
+          <file name="C:\Users\gsjesus\MyProjectABS\sugar-map.asc"/>
+        </initSource>
+        <updateSource xsi:type="org.mdd4abms.mm:ExpressionSource" identifier="" attribute="//@concerns.1/@supplementaryStructures.0/@attributes.0">
+          <expression value="min( max_acucar, (acucar + 0.1) )"/>
+        </updateSource>
+      </attributes>
+      <attributes name="max_acucar" primitiveType="DECIMAL" cardinality="1">
+        <initSource xsi:type="org.mdd4abms.mm:FileSource" identifier="" attribute="//@concerns.1/@supplementaryStructures.0/@attributes.1">
+          <file name="C:\Users\gsjesus\MyProjectABS\sugar-map.asc"/>
+        </initSource>
+      </attributes>
+      <externalNetLogoCapabilities libFile="C:\\Users\\gsjesus\\MyProjectABS\\color-cells-by-sugar-mdd4abms.nls" name="colorCellsBySugar" hasInitProcedure="true"/>
+    </supplementaryStructures>
+  </concerns>
+</org.mdd4abms.mm:AgentBasedSimulation>

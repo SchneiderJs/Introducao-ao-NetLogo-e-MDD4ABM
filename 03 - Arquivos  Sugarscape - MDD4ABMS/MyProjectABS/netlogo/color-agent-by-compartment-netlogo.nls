@@ -1,0 +1,57 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Simple visualization library that color an agent according to its disease compartment
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+globals [ 
+  agent_breed                  ; the agent breed, to use in the procedure that color agents
+  agent_compartment_attribute  ; the agent attribute that stores its current compartment
+  color_s                      ; the colors of each compartment
+  color_i
+  color_r
+  color_e
+  color_p
+]
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Procedure that colors the agents according the compartmental model
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+to colorAgentByCompartment
+  let currentCompartment osmnlogo:variable-value agent_compartment_attribute
+  if currentCompartment = "S" [
+    set color color_s
+  ]
+  if currentCompartment = "I" [
+    set color color_i
+  ]
+  if currentCompartment = "R" [
+    set color color_r
+  ]
+  if currentCompartment = "E" [
+    set color color_e
+  ]
+  if currentCompartment = "P" [
+    set color color_p
+  ]
+end
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Initialization procedure
+; Parameters: 
+;   _breed: the plural breed of the agent that will be colored (e.g.: Humans)
+;   _relevant_attributes: a list [] with the attributes that are relevant; in the case of this
+;                         library, the list must contain the agent attribute that stores 
+;                         its current compartment (e.g., ["compartmentFlu"])
+;   _relevant_commands: a list with additional commands that are relevant; in the case of 
+;                       this library, no additional command is required, and therefore this 
+;                       list must be empty  (e.g., [] )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+to colorAgentByCompartmentInit [ _breed _relevant_attributes _relevant_commands]
+  set agent_compartment_attribute item 0 _relevant_attributes
+  set agent_breed _breed
+
+  ; set the standard colors
+  set color_s green
+  set color_i red
+  set color_r blue
+  set color_e pink
+  set color_p gray
+end
